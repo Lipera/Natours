@@ -7,7 +7,7 @@ This a simple landing page of fictional tour trip company. It has a title screen
 
 Cool references for animations:
 
-- [Easings Function Cheat Sheet link](https://easings.net)
-- [Custom Cubic Bezier Curves link](http://cubic-bezier.com)
+- [Easings Function Cheat Sheet](https://easings.net)
+- [Custom Cubic Bezier Curves](http://cubic-bezier.com)
 
 > Design credit goes to Jonas Schemedtmann
