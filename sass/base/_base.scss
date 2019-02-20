@@ -1,0 +1,21 @@
+/**************************************/
+/*    BASIC DEFINITIONS OF PROJECT    */
+/**************************************/
+
+/* Reseting elements in DOM because of different browsers*/
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* by default box-size property is not inherited. We manually make it inheritable from body tag. It's better practise. */
+}
+
+html {
+    font-size: 62.5%; /* 10px and not 16 which the browser default for easier rem unit calculation. It defines what 1rem is. */
+    /* We use percentage here to not overwrite the settings of the browser which some people may alter */
+}
+
+body {
+    box-sizing: border-box;
+}
