@@ -21,7 +21,7 @@
     overflow: hidden; //hides image corner overflowing border radius of container
     opacity: 0;
     transform: translate(-50%, -50%) scale(.25); //again the translate is necessary because you cannot have 2 transform isntructions and have both properties applied
-    transition: all .6s .2s;
+    transition: all .5s .2s;
   }
 
   &__left {
