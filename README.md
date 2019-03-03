@@ -10,4 +10,4 @@ Cool references for animations:
 - [Easings Function Cheat Sheet](https://easings.net)
 - [Custom Cubic Bezier Curves](http://cubic-bezier.com)
 
-> Design credit goes to Jonas Schemedtmann
+> Design guidelines credited to Jonas Schemedtmann
