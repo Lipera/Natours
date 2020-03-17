@@ -12,3 +12,36 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px: Phone
+600 - 900px: Tablet Portrait
+900 - 1200px: Tablet Landscape
+[1200 - 1800] where normal styles apply
+1800px + : Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px (browser default)
+*/
+@mixin respond($breakpoint) { //rem and em units of media queries are only affected by the BROWSER'S font size and not the root font size
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content };            //600px  
+        //@content allows to pass block of code to mixin
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content };           //900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content };              //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content };           //1800px
+    }
+}

@@ -12,10 +12,32 @@
 }
 
 html {
-    font-size: 62.5%; /* 10px and not 16 which the browser default for easier rem unit calculation. It defines what 1rem is. */
+    font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+    /* 10px and not 16 which the browser default for easier rem unit calculation. It defines what 1rem is. */
     /* We use percentage here to not overwrite the settings of the browser which some people may alter */
+    
+    @include respond(big-desktop) {
+        font-size: 75%; // 1 rem = 12px; 12px/16px = 75%
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1 rem = 9px; 9px/16px = 56.25%
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; // 1 rem = 8px; 8px/16px = 50%
+    }
+
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // } => removed since values are the same and media query checks if screen width is inferior to the one provided
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
