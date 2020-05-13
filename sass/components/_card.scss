@@ -155,7 +155,8 @@
     font-weight: 100;
   }
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+           only screen and (hover: none) { //style applies if the device does not contain hover, i.e. touch device. If you want the opposite, you write hover: hover
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
